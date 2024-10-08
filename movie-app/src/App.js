@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {} from 'C:/Users/zhibe/Desktop/react-project-2024/node_modules/antd';
+import {} from 'antd';
 
 function App() {
   return (
