@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 
-function Navbar({ isLoggedIn, handleLogout }){
+function Navbar(){
 
     // // Logout handler
   // const handleLogout = () => {
@@ -20,11 +20,9 @@ function Navbar({ isLoggedIn, handleLogout }){
                 </ul>
             </div>
             
-            {isLoggedIn && (
-                <button className="logout" onClick={handleLogout}>
+                <button className="logout">
                     Logout
                 </button>
-            )}
         </nav>
     );
 };

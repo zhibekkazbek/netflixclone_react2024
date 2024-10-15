@@ -1,17 +1,17 @@
 import { React, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import {} from 'react-router-dom';
 import { Button } from 'antd';
-import './loginPage.css';
+import './LoginPage.css';
 import LoginImage1 from '../assets/movie-1.png';
 import LoginImage2 from '../assets/movie-3d-glasses1.png';
 /*import RunningLine from '../components/run-line.js';*/
 
-const LoginPage = ({ onLogin }) => {
+const LoginPage = ({ handleLogin }) => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-    const navigate = useNavigate();
+    // const [error, setError] = useState('');
+    // const navigate = useNavigate();
 
     // default users' information
     // Authorization by using mocks
@@ -30,12 +30,13 @@ const LoginPage = ({ onLogin }) => {
         );
 
         if (user) {
-            onLogin();
+            // onLogin();
             // If user is found, redirect to home page
-            navigate('/home');
+            // navigate('/home');
+            handleLogin(user.username);
         } else {
             // If no match, set an error message
-            setError('Invalid credentials, please try again.');
+            alert('Invalid credentials, please try again.');
         }
     }
 
@@ -50,7 +51,6 @@ const LoginPage = ({ onLogin }) => {
                 <h1>Unlimited movies, <br />TV shows, and more</h1>
                 <div className="login-box">
                     <h2>Login</h2>
-                    {error && <p className="error">{error}</p>}
                     <form onSubmit={handleSubmit}>
                         <input 
                             type="text" 

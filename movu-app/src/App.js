@@ -1,8 +1,8 @@
 import React, {} from 'react';
 import './App.css';
-import {} from 'antd';
+// import {} from 'antd';
 // import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LoginPage from './pages/loginPage';
+import LoginPage from './pages/LoginPage';
 // import Home from './pages/homePage';
 
 // 84c422344de14c64664385e01881c87b api
