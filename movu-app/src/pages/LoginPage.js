@@ -1,17 +1,16 @@
 import { React, useState } from "react";
-import {} from 'react-router-dom';
-import { Button } from 'antd';
+import {useNavigate} from 'react-router-dom';
 import './LoginPage.css';
 import LoginImage1 from '../assets/movie-1.png';
 import LoginImage2 from '../assets/movie-3d-glasses1.png';
 /*import RunningLine from '../components/run-line.js';*/
 
-const LoginPage = ({ handleLogin }) => {
+const LoginPage = ({ onLogin }) => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     // const [error, setError] = useState('');
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     // default users' information
     // Authorization by using mocks
@@ -24,16 +23,18 @@ const LoginPage = ({ handleLogin }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        console.log(1);
+        
         // Use .find() to check if username and password match any user in the array
         const user = users.find(
             (user) => user.username === username && user.password === password
         );
 
         if (user) {
-            // onLogin();
+            onLogin();
             // If user is found, redirect to home page
-            // navigate('/home');
-            handleLogin(user.username);
+            navigate('/home');
+            // handleLogin(user.username);
         } else {
             // If no match, set an error message
             alert('Invalid credentials, please try again.');
@@ -68,7 +69,7 @@ const LoginPage = ({ handleLogin }) => {
                             onChange={(e) => setPassword(e.target.value)}
                             required 
                         />
-                        <Button type="submit" className="login-button">Login</Button>
+                        <button type="submit" className="login-button">Login</button>
                     </form>
                 </div>
             </div>
