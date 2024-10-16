@@ -21,7 +21,7 @@ const HomePage = () => {
                 <img src={promo} alt="promo"/>
                 <div className="promo-wrapper">
                     <h2 className="promo-title">Graf Monte-Cristo</h2>
-                    <Link to="/">Go Ticketon</Link>
+                    <Link to="https://ticketon.kz/event/graf-monte-kristo-2024">Go Ticketon</Link>
                 </div>
             </div>
 
