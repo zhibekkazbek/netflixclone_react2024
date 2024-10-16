@@ -4,6 +4,9 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
+import MoviesPage from './pages/MoviesPage';
+import MovieDetail from './pages/MovieDetail'
+import UserPage from './pages/UserPage'
 
 // 84c422344de14c64664385e01881c87b api
 
@@ -35,6 +38,32 @@ function App() {
               )
             }
           />
+
+          <Route
+            path="/user"
+            element={
+              isAuthenticated ? (
+                <UserPage />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+
+            <Route
+            path="/movies"
+            element={
+              isAuthenticated ? (
+                <MoviesPage />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+
+          {/* Динамический routing */}
+
+          <Route path="/movie/:id" element={<MovieDetail />} />
   
           {/* Redirect from root to login if not authenticated */}
           <Route

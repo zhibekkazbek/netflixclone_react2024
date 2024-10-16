@@ -11,7 +11,7 @@ export const moviesList = [
       rating: 8.8,
       duration: "148 min",
       description: "A skilled thief is given a chance at redemption if he can successfully perform inception by planting an idea into the mind of a C.E.O.",
-      poster: "https://example.com/inception.jpg"
+      poster: "https://example.com/inception.jpg",
     },
     {
       id: 2,
