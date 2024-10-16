@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { React, useState } from "react";
 import Navbar from "../components/Navbar";
 import './UserPage.css'

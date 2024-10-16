@@ -2,6 +2,7 @@ import { React } from "react";
 import Navbar from "../components/Navbar";
 import './HomePage.css'
 import promo from '../assets/montecristo.png'
+// eslint-disable-next-line
 import SearchBar from "../components/SearchBar";
 import { moviesList } from "../movieList";
 import Category from "../components/Category";
@@ -9,10 +10,6 @@ import { Link } from 'react-router-dom';
 /*import RunningLine from '../components/run-line.js';*/
 
 const HomePage = () => {
-    const handleSearch = (query) => {
-        console.log('Searching for:', query);
-        // Логика поиска
-      };
    return(
     <div className="home">
         <Navbar/>

@@ -32,7 +32,7 @@ const Category = ({category,movies, type}) => {
                         <h3>{movie.title}</h3>
                         
                         <div className="movie-descr">
-                            <p className="movie-rating"><img src={star}/> {movie.rating}</p>
+                            <p className="movie-rating"><img src={star} alt="rating"/> {movie.rating}</p>
                             <p className="movie-year">{movie.releaseYear}</p>
                         </div>
                     </Link>

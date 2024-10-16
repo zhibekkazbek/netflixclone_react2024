@@ -2,9 +2,11 @@ import { React, useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { moviesList } from "../movieList";
 import './HomePage.css'
+// eslint-disable-next-line
 import promo from '../assets/montecristo.png'
 import SearchBar from "../components/SearchBar";
 import Category from "../components/Category";
+// eslint-disable-next-line
 import { Link } from 'react-router-dom';
 import withLoader from '../components/Loader'
 /*import RunningLine from '../components/run-line.js';*/
