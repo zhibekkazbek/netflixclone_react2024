@@ -59,6 +59,17 @@ function App() {
                 <Navigate to="/login" />
               )
             }
+
+          />
+          <Route
+            path="/*"
+            element={
+              isAuthenticated ? (
+                <HomePage />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
           />
 
           {/* Динамический routing */}
