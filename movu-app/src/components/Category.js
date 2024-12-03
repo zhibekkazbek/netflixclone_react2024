@@ -2,7 +2,7 @@ import { React, useState, useEffect, useMemo } from "react";
 import { Link } from 'react-router-dom';
 import './components.css';
 import star from '../assets/star.svg'
-import test from '../assets/montecristo.png'
+// import test from '../assets/montecristo.png'
 const Category = ({category,movies, type}) => {
     const [content, setContent] = useState([]);
 
@@ -27,7 +27,7 @@ const Category = ({category,movies, type}) => {
                 filteredContent.map((movie) => (
                     <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-item">
                         <div className="movie-item-img">
-                            <img src={test} alt={movie.title} />
+                            <img src={movie.poster} alt={movie.title} />
                         </div>
                         <h3>{movie.title}</h3>
                         

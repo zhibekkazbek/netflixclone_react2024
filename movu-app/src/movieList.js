@@ -11,7 +11,7 @@ export const moviesList = [
       rating: 8.8,
       duration: "148 min",
       description: "A skilled thief is given a chance at redemption if he can successfully perform inception by planting an idea into the mind of a C.E.O.",
-      poster: "https://example.com/inception.jpg",
+      poster: "https://avatars.mds.yandex.net/i?id=f45eb9d86347f71fa59dd5c6e2bb8606_l-5234671-images-thumbs&n=13",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export const moviesList = [
       rating: 8.6,
       duration: "132 min",
       description: "Greed and class discrimination threaten the relationship between the wealthy Park family and the destitute Kim clan.",
-      poster: "https://example.com/parasite.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=8000fc7608be1557b83bd8806bf26f88c1ed2912-5213474-images-thumbs&n=13"
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export const moviesList = [
       rating: 8.6,
       duration: "169 min",
       description: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-      poster: "https://example.com/interstellar.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=be8f9356706a8abe8330c89c01debcbbbe40090d-4080206-images-thumbs&n=13"
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export const moviesList = [
       rating: 9.2,
       duration: "175 min",
       description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      poster: "https://example.com/godfather.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=468cc75f8351c0b30f5cd5e445f5359cae33c8046eb9b8a7-12539473-images-thumbs&n=13"
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ export const moviesList = [
       rating: 9.0,
       duration: "152 min",
       description: "When the Joker wreaks havoc and chaos on Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-      poster: "https://example.com/dark_knight.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=fa3f011ab5e221bc03c4b5a06a9c74676cb9816c-8931611-images-thumbs&n=13"
     },
     {
       id: 6,
@@ -81,7 +81,7 @@ export const moviesList = [
       rating: 8.9,
       duration: "154 min",
       description: "The lives of two mob hitmen, a boxer, a gangster, and his wife intertwine in four tales of violence and redemption.",
-      poster: "https://example.com/pulp_fiction.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=97450be6b53c19e12f0ef1d56556e6ff2abcb4d2-9222875-images-thumbs&n=13"
     },
     {
       id: 7,
@@ -95,7 +95,7 @@ export const moviesList = [
       rating: 8.7,
       duration: "136 min",
       description: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-      poster: "https://example.com/matrix.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=9eb400630c9cd70ff6745eac3bfca3f9e8a3e4b8-9181121-images-thumbs&n=13"
     },
     {
       id: 8,
@@ -109,7 +109,7 @@ export const moviesList = [
       rating: 8.8,
       duration: "142 min",
       description: "The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other historical events unfold from the perspective of an Alabama man with a very low IQ.",
-      poster: "https://example.com/forrest_gump.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=c5cf29437263b03ea4f0a2a42befa9d7333a685df8d0b1a9-13033711-images-thumbs&n=13"
     },
     {
       id: 9,
@@ -123,7 +123,7 @@ export const moviesList = [
       rating: 9.0,
       duration: "195 min",
       description: "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-      poster: "https://example.com/schindlers_list.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=d2fc6294c97282e8288af0e7b3689ee11c4abee1-4475134-images-thumbs&n=13"
     },
     {
       id: 10,
@@ -137,7 +137,7 @@ export const moviesList = [
       rating: 8.6,
       duration: "125 min",
       description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, where humans are changed into beasts.",
-      poster: "https://example.com/spirited_away.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=97456c0ae8c159d0c392f03ca69a26ea7ad14d15-12537594-images-thumbs&n=13"
     },
     {
       id: 11,
@@ -151,7 +151,7 @@ export const moviesList = [
       rating: 8.8,
       duration: "139 min",
       description: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
-      poster: "https://example.com/fight_club.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=8a927ed2b3af398f82183b5656672ebb0b0aa772-6962773-images-thumbs&n=13"
     },
     {
       id: 12,
@@ -165,7 +165,7 @@ export const moviesList = [
       rating: 8.5,
       duration: "155 min",
       description: "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-      poster: "https://example.com/gladiator.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=fcd18869494389860bbaf713d478e11a93e02977-5141542-images-thumbs&n=13"
     },
     {
       id: 13,
@@ -179,7 +179,7 @@ export const moviesList = [
       rating: 8.8,
       duration: "178 min",
       description: "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      poster: "https://example.com/lotr_fellowship.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=199ba5f2210fa90d267500f4b193e6b5b82d8456-4815576-images-thumbs&n=13"
     },
     {
       id: 14,
@@ -193,7 +193,7 @@ export const moviesList = [
       rating: 7.8,
       duration: "120 min",
       description: "The story of the founders of Facebook and the resulting legal battles surrounding the company's rise to success.",
-      poster: "https://example.com/social_network.jpg"
+      poster: "https://avatars.mds.yandex.net/i?id=f9dfd62177d6c7121467a051cab987a5ca2c3a00efababa0-5865919-images-thumbs&n=13"
     },
     {
       id: 15,
@@ -207,6 +207,7 @@ export const moviesList = [
       rating: 8.4,
       duration: "122 min",
       description: "In Gotham City, a mentally troubled comedian embarks on a downward spiral of",
+      poster: "https://avatars.mds.yandex.net/i?id=27ed945ec9adefdb9fbb4c5097abc880a67743cb-10873492-images-thumbs&n=13"
     },
         {
           id: 16,
@@ -220,7 +221,7 @@ export const moviesList = [
           rating: 6.9,
           duration: "156 min",
           description: "The life and story of the great queen Tomiris, who united the Saka tribes and led them in defense of their freedom against the Persian Empire.",
-          poster: "https://example.com/tomiris.jpg"
+          poster: "https://avatars.mds.yandex.net/i?id=22ad0cf51320057cc4689b8a8c4321540e405d85bb96f5d4-5524072-images-thumbs&n=13"
         },
         {
           id: 17,
@@ -234,7 +235,7 @@ export const moviesList = [
           rating: 7.8,
           duration: "130 min",
           description: "A historical drama telling the story of a young man’s journey across decades to reunite with his mother, set against the backdrop of WWII and the Soviet era.",
-          poster: "https://example.com/road_to_mother.jpg"
+          poster: "https://avatars.mds.yandex.net/i?id=b31b0a98b6a2b6f217b2f2df57cc772ae212fe0c-8497405-images-thumbs&n=13"
         },
         {
           id: 18,
@@ -248,7 +249,7 @@ export const moviesList = [
           rating: 7.0,
           duration: "100 min",
           description: "A young man returns home after serving in the Russian Navy and dreams of marrying a local girl named Tulpan, but faces numerous challenges in the remote Kazakh steppe.",
-          poster: "https://example.com/tulpan.jpg"
+          poster: "https://avatars.mds.yandex.net/i?id=cb821fa1bba1da2d9a50b28269191fd9c7ca8786-7012253-images-thumbs&n=13"
         },
         {
           id: 19,
@@ -262,7 +263,7 @@ export const moviesList = [
           rating: 6.7,
           duration: "100 min",
           description: "A historical epic about a group of young warriors who rise up to defend their people against the Dzungar invaders in 18th century Kazakhstan.",
-          poster: "https://example.com/myn_bala.jpg"
+          poster: "https://avatars.mds.yandex.net/i?id=c2bcc99786bc2d7bde351605ab196533d9618b61-9181195-images-thumbs&n=13"
         },
         {
           id: 20,
@@ -276,7 +277,7 @@ export const moviesList = [
           rating: 7.4,
           duration: "97 min",
           description: "A boy escapes Stalin’s purges and is taken in by a kind-hearted railway worker in the remote Kazakh steppe, forming an unlikely bond as they try to survive.",
-          poster: "https://example.com/gift_to_stalin.jpg"
+          poster: "https://avatars.mds.yandex.net/i?id=fbaa6ff12794e4de47376ba2e94b1807c6283f9b-5887129-images-thumbs&n=13"
         }
       ];
       
