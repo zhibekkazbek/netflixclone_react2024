@@ -1,0 +1,10 @@
+{
+    "movies": [
+      { "id": 1, "title": "Inception", "description": "A mind-bending thriller" },
+      { "id": 2, "title": "Interstellar", "description": "Exploring the cosmos" }
+    ],
+    "users": [
+      { "id": 1, "name": "John Doe", "email": "john@example.com" }
+    ]
+  }
+  
