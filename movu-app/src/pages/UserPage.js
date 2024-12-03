@@ -1,11 +1,14 @@
 // eslint-disable-next-line
-import { React, useState } from "react";
+import React, { useContext } from 'react';
+import { UserContext } from '../UserContext';
 import Navbar from "../components/Navbar";
 import './UserPage.css'
 import avatar from '../assets/avatar.png'
 
 const UserPage = () => {
-
+    const { userId } = useContext(UserContext);
+    console.log(userId);
+    
    return(
     <div className="home">
         <Navbar/>

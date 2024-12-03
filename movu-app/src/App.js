@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 // import {} from 'antd';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { UserProvider } from './UserContext';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import MoviesPage from './pages/MoviesPage';
@@ -19,7 +20,8 @@ function App() {
     };
   
     return (
-      <Router>
+      <UserProvider>
+<Router>
         <Routes>
           {/* Default route to Login page */}
           <Route
@@ -72,6 +74,8 @@ function App() {
           />
         </Routes>
       </Router>
+      </UserProvider>
+      
     );
 
 };

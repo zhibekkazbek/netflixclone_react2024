@@ -1,15 +1,26 @@
-import { React } from "react";
+import { React, useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import './HomePage.css'
+import { getMovies } from "../service/movieService";
 import promo from '../assets/montecristo.png'
 // eslint-disable-next-line
 import SearchBar from "../components/SearchBar";
-import { moviesList } from "../movieList";
+// import { moviesList } from "../movieList";
 import Category from "../components/Category";
 import { Link } from 'react-router-dom';
 /*import RunningLine from '../components/run-line.js';*/
 
 const HomePage = () => {
+    const [moviesList, setMoviesList] = useState([]);
+
+    useEffect(() => {
+      const fetchPosts = async () => {
+        const moviesList = await getMovies();
+        setMoviesList(moviesList);
+      };
+      fetchPosts();
+    }, [])
+
    return(
     <div className="home">
         <Navbar/>

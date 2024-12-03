@@ -27,7 +27,7 @@ const Category = ({category,movies, type}) => {
                 filteredContent.map((movie) => (
                     <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-item">
                         <div className="movie-item-img">
-                            <img src={test} alt={movie.title} />
+                            <img src={movie.poster} alt={movie.title} />
                         </div>
                         <h3>{movie.title}</h3>
                         
