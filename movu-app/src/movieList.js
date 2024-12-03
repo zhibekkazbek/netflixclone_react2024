@@ -1,6 +1,7 @@
 export const moviesList = [
     {
       id: 1,
+      later: false,
       title: "Inception",
       actors: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
       director: "Christopher Nolan",
@@ -15,6 +16,7 @@ export const moviesList = [
     },
     {
       id: 2,
+      later: false,
       title: "Parasite",
       actors: ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Cho"],
       director: "Bong Joon Ho",
@@ -29,6 +31,7 @@ export const moviesList = [
     },
     {
       id: 3,
+      later: false,
       title: "Interstellar",
       actors: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
       director: "Christopher Nolan",
@@ -43,6 +46,7 @@ export const moviesList = [
     },
     {
       id: 4,
+      later: false,
       title: "The Godfather",
       actors: ["Marlon Brando", "Al Pacino", "James Caan"],
       director: "Francis Ford Coppola",
@@ -57,6 +61,7 @@ export const moviesList = [
     },
     {
       id: 5,
+      later: false,
       title: "The Dark Knight",
       actors: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
       director: "Christopher Nolan",
@@ -71,6 +76,7 @@ export const moviesList = [
     },
     {
       id: 6,
+      later: false,
       title: "Pulp Fiction",
       actors: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
       director: "Quentin Tarantino",
@@ -85,6 +91,7 @@ export const moviesList = [
     },
     {
       id: 7,
+      later: false,
       title: "The Matrix",
       actors: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
       director: "The Wachowskis",
@@ -99,6 +106,7 @@ export const moviesList = [
     },
     {
       id: 8,
+      later: false,
       title: "Forrest Gump",
       actors: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
       director: "Robert Zemeckis",
@@ -113,6 +121,7 @@ export const moviesList = [
     },
     {
       id: 9,
+      later: false,
       title: "Schindler's List",
       actors: ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
       director: "Steven Spielberg",
@@ -127,6 +136,7 @@ export const moviesList = [
     },
     {
       id: 10,
+      later: false,
       title: "Spirited Away",
       actors: ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
       director: "Hayao Miyazaki",

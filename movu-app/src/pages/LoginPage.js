@@ -1,50 +1,50 @@
-import { React, useState } from "react";
-import {useNavigate} from 'react-router-dom';
+import React, { useState, useEffect, useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import LoginImage1 from '../assets/movie-1.png';
 import LoginImage2 from '../assets/movie-3d-glasses1.png';
-/*import RunningLine from '../components/run-line.js';*/
+import { fetchUsers } from '../service/movieService';
+import { UserContext } from '../userContext';
 
 const LoginPage = ({ onLogin }) => {
-
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    // const [error, setError] = useState('');
+    const [users, setUsers] = useState([]);
     const navigate = useNavigate();
+    const { setUserId } = useContext(UserContext); // Доступ к функции для установки ID пользователя
 
-    // default users' information
-    // Authorization by using mocks
-    const users = [
-        { username: 'kersiie', password: '12345678'},
-        { username: 'alina', password: '12345678'},
-        { username: 'ulpan', password: '12345678'},
-    ]
+    useEffect(() => {
+        const loadUsers = async () => {
+            try {
+                const usersData = await fetchUsers();
+                setUsers(usersData);
+            } catch (error) {
+                console.error("Failed to fetch users:", error);
+            }
+        };
+        
+        loadUsers();
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log(1);
-        
-        // Use .find() to check if username and password match any user in the array
         const user = users.find(
             (user) => user.username === username && user.password === password
         );
 
         if (user) {
+            setUserId(user.id); // Сохранение ID пользователя в контексте
             onLogin();
-            // If user is found, redirect to home page
             navigate('/home');
-            // handleLogin(user.username);
         } else {
-            // If no match, set an error message
             alert('Invalid credentials, please try again.');
         }
-    }
+    };
 
     return (
         <div className="login-page">
-            {/* <RunningLine /> */}
-             <div className="background-images">
+            <div className="background-images">
                 <img src={LoginImage1} alt="login-img1" className='login-img1' />
                 <img src={LoginImage2} alt="login-img2" className='login-img2' />
             </div>
@@ -53,21 +53,21 @@ const LoginPage = ({ onLogin }) => {
                 <div className="login-box">
                     <h2>Login</h2>
                     <form onSubmit={handleSubmit}>
-                        <input 
-                            type="text" 
-                            placeholder="Username" 
+                        <input
+                            type="text"
+                            placeholder="Username"
                             value={username}
                             className="input-field"
                             onChange={(e) => setUsername(e.target.value)}
                             required
                         />
-                        <input 
-                            type="password" 
-                            placeholder="Password" 
+                        <input
+                            type="password"
+                            placeholder="Password"
                             value={password}
                             className="input-field"
                             onChange={(e) => setPassword(e.target.value)}
-                            required 
+                            required
                         />
                         <button type="submit" className="login-button">Login</button>
                     </form>
@@ -75,6 +75,6 @@ const LoginPage = ({ onLogin }) => {
             </div>
         </div>
     );
-}
+};
 
 export default LoginPage;

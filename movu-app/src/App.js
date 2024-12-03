@@ -2,11 +2,14 @@ import React, {useState} from 'react';
 import './App.css';
 // import {} from 'antd';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { UserProvider } from './userContext';
+import { WatchLaterProvider } from './watchLaterContext';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import MoviesPage from './pages/MoviesPage';
 import MovieDetail from './pages/MovieDetail'
 import UserPage from './pages/UserPage'
+import WatchLaterPage from './pages/WatchLaterPage'
 
 // 84c422344de14c64664385e01881c87b api
 
@@ -19,7 +22,9 @@ function App() {
     };
   
     return (
-      <Router>
+      <UserProvider>
+        <WatchLaterProvider>
+<Router>
         <Routes>
           {/* Default route to Login page */}
           <Route
@@ -59,13 +64,12 @@ function App() {
                 <Navigate to="/login" />
               )
             }
-
           />
-          <Route
-            path="/*"
+            <Route
+            path="/watchlist"
             element={
               isAuthenticated ? (
-                <HomePage />
+                <WatchLaterPage />
               ) : (
                 <Navigate to="/login" />
               )
@@ -83,6 +87,9 @@ function App() {
           />
         </Routes>
       </Router>
+      </WatchLaterProvider>
+      </UserProvider>
+      
     );
 
 };

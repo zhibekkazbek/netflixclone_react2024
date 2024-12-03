@@ -2,7 +2,8 @@ import { React, useState, useEffect, useMemo } from "react";
 import { Link } from 'react-router-dom';
 import './components.css';
 import star from '../assets/star.svg'
-// import test from '../assets/montecristo.png'
+// eslint-disable-next-line
+import test from '../assets/montecristo.png'
 const Category = ({category,movies, type}) => {
     const [content, setContent] = useState([]);
 

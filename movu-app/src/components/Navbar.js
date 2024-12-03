@@ -26,6 +26,7 @@ const Navbar = () => {
             <div className="menu">
                 <Link to="/home" className={isActive('/home')}><img src={home} alt="icon"/> Home</Link>
                 <Link to="/movies" className={isActive('/movies')}><img src={movies} alt="icon"/> Movies</Link>
+                <Link to="/watchlist" className={isActive('/watchlist')}><img src={user} alt="icon"/> Watch Later </Link>
                 <Link to="/user" className={isActive('/user')}><img src={user} alt="icon"/> User</Link>
             </div>
         </div>
