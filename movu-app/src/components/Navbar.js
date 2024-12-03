@@ -4,6 +4,8 @@ import logo from '../assets/logo.svg'
 import home from '../assets/bx_home-alt-2.svg'
 import movies from '../assets/mdi_movie-open-outline.svg'
 import user from '../assets/Vector.svg'
+import tvshows from '../assets/tvshows.svg'
+import favorites from '../assets/favorites.svg'
 import logout from '../assets/circum_logout.svg'
 import './components.css';
 const Navbar = () => {
@@ -26,6 +28,8 @@ const Navbar = () => {
             <div className="menu">
                 <Link to="/home" className={isActive('/home')}><img src={home} alt="icon"/> Home</Link>
                 <Link to="/movies" className={isActive('/movies')}><img src={movies} alt="icon"/> Movies</Link>
+                <Link to="/tvshows" className={isActive('/tvshows')}><img src={tvshows} alt="icon"/> TV Shows</Link>
+                <Link to="/favorites" className={isActive('/favorites')}><img src={favorites} alt="icon"/> Watch later</Link>
                 <Link to="/user" className={isActive('/user')}><img src={user} alt="icon"/> User</Link>
             </div>
         </div>

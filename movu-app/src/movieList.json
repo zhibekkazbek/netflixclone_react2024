@@ -306,5 +306,87 @@
       "phone": "",
       "role": "user"
     }
+  ], 
+  "tvShowsList": [
+    {
+      "id": 1,
+      "title": "Breaking Bad",
+      "actors": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+      "director": "Vince Gilligan",
+      "country": "USA",
+      "releaseYear": 2008,
+      "seasons": 5,
+      "episodes": 62,
+      "genre": ["Crime", "Drama", "Thriller"],
+      "category": "TrendingNow",
+      "rating": 9.5,
+      "duration": "45-60 min per episode",
+      "description": "A high school chemistry teacher turned methamphetamine manufacturer navigates the dangers of the drug trade while dealing with personal and family struggles.",
+      "poster": "https://example.com/poster1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Stranger Things",
+      "actors": ["Winona Ryder", "David Harbour", "Millie Bobby Brown"],
+      "director": "The Duffer Brothers",
+      "country": "USA",
+      "releaseYear": 2016,
+      "seasons": 4,
+      "episodes": 34,
+      "genre": ["Drama", "Fantasy", "Horror"],
+      "category": "Cult",
+      "rating": 8.7,
+      "duration": "50-75 min per episode",
+      "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange girl.",
+      "poster": "https://example.com/poster2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Game of Thrones",
+      "actors": ["Emilia Clarke", "Kit Harington", "Peter Dinklage"],
+      "director": "David Benioff, D.B. Weiss",
+      "country": "USA",
+      "releaseYear": 2011,
+      "seasons": 8,
+      "episodes": 73,
+      "genre": ["Action", "Adventure", "Drama"],
+      "category": "Epic",
+      "rating": 9.2,
+      "duration": "50-80 min per episode",
+      "description": "Nine noble families wage war against each other to gain control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+      "poster": "https://example.com/poster3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Crown",
+      "actors": ["Claire Foy", "Olivia Colman", "Matt Smith"],
+      "director": "Peter Morgan",
+      "country": "UK",
+      "releaseYear": 2016,
+      "seasons": 6,
+      "episodes": 60,
+      "genre": ["Biography", "Drama", "History"],
+      "category": "Historical",
+      "rating": 8.7,
+      "duration": "50-60 min per episode",
+      "description": "Follows the reign of Queen Elizabeth II as she navigates the complexities of her role as the monarch and the challenges of the modern world.",
+      "poster": "https://example.com/poster4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Dark",
+      "actors": ["Louis Hofmann", "Karoline Eichhorn", "Lisa Vicari"],
+      "director": "Baran bo Odar, Jantje Friese",
+      "country": "Germany",
+      "releaseYear": 2017,
+      "seasons": 3,
+      "episodes": 26,
+      "genre": ["Crime", "Drama", "Mystery"],
+      "category": "TrendingNow",
+      "rating": 8.8,
+      "duration": "50-60 min per episode",
+      "description": "A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery that spans three generations.",
+      "poster": "https://example.com/poster5.jpg"
+    }
   ]
 }
