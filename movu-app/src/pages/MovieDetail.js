@@ -24,7 +24,7 @@ const MovieDetail = () => {
     fetchPosts();
   }, []);
 
-  const movie = moviesList.find((movie) => movie.id == id);
+  const movie = moviesList.find((movie) => movie.id === id);
 
   if (isLoading) {
     return <p>Loading...</p>; // Display while loading

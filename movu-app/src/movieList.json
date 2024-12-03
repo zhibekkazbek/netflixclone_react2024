@@ -297,6 +297,14 @@
       "email": "",
       "phone": "",
       "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "alina",
+      "password": "12345678",
+      "email": "",
+      "phone": "",
+      "role": "user"
     }
   ]
 }
