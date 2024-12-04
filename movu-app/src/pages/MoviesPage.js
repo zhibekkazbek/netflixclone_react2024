@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import './HomePage.css';
-import promo from '../assets/montecristo.png'; // eslint-disable-line
+// import promo from '../assets/montecristo.png'; // eslint-disable-line
 import SearchBar from "../components/SearchBar";
 import Category from "../components/Category";
-import { Link } from 'react-router-dom'; // eslint-disable-line
+// import { Link } from 'react-router-dom'; // eslint-disable-line
 import withLoader from '../components/Loader';
 import { getMovies } from "../service/movieService";
 

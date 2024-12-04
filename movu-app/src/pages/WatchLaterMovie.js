@@ -6,11 +6,12 @@ import { WatchLaterContext } from '../watchLaterContext';
 import { Button } from 'antd';
 import './MovieDetail.css'
 
-const MovieDetail = () => {
+const WatchLaterMovie = () => {
   const { id } = useParams(); // Get movie id from URL
   const [moviesList, setMoviesList] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Track loading state
-  const { addToWatchLater } = useContext(WatchLaterContext);
+  // const { addToWatchLater } = useContext(WatchLaterContext);
+  const {removeFromWatchLater } = useContext(WatchLaterContext);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -52,10 +53,12 @@ const MovieDetail = () => {
           <p>Description: {movie.description}</p>
           
         </div>
-        <Button id="bttn" type="primary" onClick={() => addToWatchLater(movie)}> Watch Later </Button>
+        <Button id="bttn-del" type="primary" danger onClick={() => removeFromWatchLater(movie.id)}>
+          Remove
+        </Button>
       </div>
     </div>
   );
 };
 
-export default MovieDetail;
+export default WatchLaterMovie;

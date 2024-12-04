@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { Link } from 'react-router-dom';
 // import './components.css';
 import star from '../assets/star.svg'
+import { Button } from 'antd'
 
 function WatchLaterPage() {
   const { watchLaterList } = useContext(WatchLaterContext);
@@ -15,10 +16,11 @@ function WatchLaterPage() {
       <div className="home-wrapper">
         <div className="movie-detail">
             <h1>Watch Later Movies</h1>
-
+            <div className="category">
             {watchLaterList.length > 0 ? (
                 watchLaterList.map((movie) => (
-                    <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-item">
+                  <div>
+                    <Link to={`/watchlist/${movie.id}`} key={movie.id} className="movie-item">
                         <div className="movie-item-img">
                             <img src={movie.poster} alt={movie.title} />
                         </div>
@@ -28,11 +30,13 @@ function WatchLaterPage() {
                             <p className="movie-rating"><img src={star} alt="rating"/> {movie.rating}</p>
                             {/* <p className="movie-year">{movie.releaseYear}</p> */}
                         </div>
-                    </Link>
+                        </Link>
+                    </div>
                 ))
             ) : (
                 <p>No movies found in this category.</p>
             )}
+            </div>
         </div>
       </div>
     </div>

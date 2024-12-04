@@ -10,6 +10,8 @@ import MoviesPage from './pages/MoviesPage';
 import MovieDetail from './pages/MovieDetail'
 import UserPage from './pages/UserPage'
 import WatchLaterPage from './pages/WatchLaterPage'
+import WatchLaterMovie from './pages/WatchLaterMovie'
+
 
 // 84c422344de14c64664385e01881c87b api
 
@@ -23,8 +25,8 @@ function App() {
   
     return (
       <UserProvider>
+      <Router>
         <WatchLaterProvider>
-<Router>
         <Routes>
           {/* Default route to Login page */}
           <Route
@@ -75,6 +77,7 @@ function App() {
               )
             }
           />
+          <Route path="/watchlist/:id" element={<WatchLaterMovie/>} />
 
           {/* Динамический routing */}
 
@@ -86,8 +89,8 @@ function App() {
             element={<Navigate to="/login" />}
           />
         </Routes>
-      </Router>
       </WatchLaterProvider>
+      </Router>
       </UserProvider>
       
     );
