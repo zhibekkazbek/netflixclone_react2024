@@ -1,0 +1,36 @@
+/* GenreFilter.css */
+.genre-filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.genre-filter-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.genre-filter-select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.genre-filter-select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.genre-filter-select option {
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+}
